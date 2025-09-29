@@ -92,7 +92,7 @@ export default function UpsellPage() {
             <a href="javascript:void(0)" data-fornpay="ckfxxpqonv" className="fornpay_btn">
               SIM, EU ACEITO ESSA OFERTA
             </a>
-            <a href="javascript:void(0)" data-downsell="https://up1.antimenopausa.site" className="fornpay_downsell">
+            <a href="javascript:void(0)" data-downsell="https://up2.antimenopausa.site" className="fornpay_downsell">
               Vou recusar essa oferta
             </a>
           </div>
