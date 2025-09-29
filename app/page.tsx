@@ -107,41 +107,46 @@ export default function UpsellPage() {
         </div>
       </footer>
 
-      {/* Styles for the one-click upsell button */}
-      <style jsx>{`
-        .fornpay_btn {
-          background: #3d94f6;
-          background-image: -webkit-linear-gradient(top, #3d94f6, #1e62d0);
-          background-image: -moz-linear-gradient(top, #3d94f6, #1e62d0);
-          background-image: -ms-linear-gradient(top, #3d94f6, #1e62d0);
-          background-image: -o-linear-gradient(top, #3d94f6, #1e62d0);
-          background-image: -webkit-gradient(to bottom, #3d94f6, #1e62d0);
-          -webkit-border-radius: 10px;
-          -moz-border-radius: 10px;
-          border-radius: 10px;
-          color: #fff;
-          font-family: Arial;
-          font-size: 18px;
-          font-weight: 100;
-          padding: 10px 20px;
-          border: 1px solid #337fed;
-          text-decoration: none;
-          display: block;
-          cursor: pointer;
-          text-align: center;
-        }
-        .fornpay_downsell {
-          color: #004faa;
-          font-family: Arial;
-          margin-top: 10px;
-          font-size: 16px!important;
-          font-weight: 100;
-          text-decoration: none;
-          display: block;
-          cursor: pointer;
-          text-align: center;
-        }
-      `}</style>
+      {/* One-click script */}
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+          .fornpay_btn {
+            background: #3d94f6;
+            background-image: -webkit-linear-gradient(top, #3d94f6, #1e62d0);
+            background-image: -moz-linear-gradient(top, #3d94f6, #1e62d0);
+            background-image: -ms-linear-gradient(top, #3d94f6, #1e62d0);
+            background-image: -o-linear-gradient(top, #3d94f6, #1e62d0);
+            background-image: -webkit-gradient(to bottom, #3d94f6, #1e62d0);
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            color: #fff;
+            font-family: Arial;
+            font-size: 18px;
+            font-weight: 100;
+            padding: 10px 20px;
+            border: 1px solid #337fed;
+            text-decoration: none;
+            display: block;
+            cursor: pointer;
+            text-align: center
+          }
+
+          .fornpay_downsell {
+            color: #004faa;
+            font-family: Arial;
+            margin-top: 10px;
+            font-size: 16px!important;
+            font-weight: 100;
+            text-decoration: none;
+            display: block;
+            cursor: pointer;
+            text-align: center
+          }
+        `,
+        }}
+      />
 
       {/* One-click script */}
       <script src="https://app.paradisepagbr.com/js/oneclick.js"></script>
